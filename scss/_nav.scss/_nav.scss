@@ -1,0 +1,8 @@
+
+@mixin colornav {
+	background-color: #c9c4de; 
+}
+
+nav {
+    @include colornav}
+  

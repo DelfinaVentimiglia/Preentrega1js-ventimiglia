@@ -1,0 +1,15 @@
+.card {
+	.circulo-circulo {
+		color: $color_4;
+		background-color: $background-color_1;
+	}
+}
+@mixin card {
+	
+		margin-top: 5cm;
+
+}
+
+card{
+	@include card
+}

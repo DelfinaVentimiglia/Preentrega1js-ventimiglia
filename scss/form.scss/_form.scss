@@ -1,0 +1,25 @@
+.form-control {
+	outline: none;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	height: 50px;
+	&:focus {
+		-webkit-box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+		box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+		outline: none;
+	}
+	&:active {
+		outline: none;
+	}
+}
+.btn {
+	-webkit-box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+	box-shadow: 0 3px 10px -2px rgba(0,0,0,0.2) !important;
+}
+.btn.btn-secondary {
+	color: $color_1;
+	border-width: 2px;
+	background-color: $background-color_2;
+	border-color: $border-color_1;
+	padding: 10px;
+}

@@ -1,0 +1,45 @@
+$color_1: #FFF;
+$color_2: #fff;
+$color_3: #fbe78a;
+$color_4: #c9c4de;
+$font-family_1: 'Open Sans';
+$background-color_1: #c9c4de;
+$background-color_2: #504c62;
+$border-color_1: #504c62;
+$border-color_2: #fff;
+@import "_nav.scss/nav";
+@import "_reset.scss/reset";
+@import "card.scss/card";
+@import "footer.scss/footer";
+@import "form.scss/form";
+
+/*nav*/
+/*main*/
+/* footer*/
+/*actividades*/
+card{
+	margin-top: 5cm;
+}
+
+
+@mixin colornav {
+	background-color: #c9c4de; 
+}
+
+$colors: (
+	"primary": #fff,
+	"secondary": #fff,
+	"background-color_1": #c9c4de,
+	"background-color_2": #504c62,
+	"border-color_1":#504c62,
+	"border-color_2":#fff,
+
+);
+
+@function color($search) {
+	@return map-get($colors, $search);
+  }
+  @each $key, $value in $colors {
+	.color-#{$key}{ color: #{$value}; }
+	.bg-#{$key}{ background-color: #{$value}; }
+  }
